@@ -22,6 +22,7 @@ const CountrySelect = forwardRef<HTMLSelectElement, NativeSelectProps>(
       if (!currentRegion) {
         return []
       }
+      console.log(regions);
 
       return currentRegion.countries.map((country) => ({
         value: country.iso_2,

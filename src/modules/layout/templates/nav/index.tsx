@@ -74,7 +74,7 @@ const Nav = () => {
 
           <div className="flex items-center h-full">
             <Link href="/" className="text-xl-semi uppercase">
-              Acme
+              MY APP STORE
             </Link>
           </div>
 
@@ -83,6 +83,7 @@ const Nav = () => {
               {process.env.FEATURE_SEARCH_ENABLED && <DesktopSearchModal />}
               <Link href="/account">Account</Link>
             </div>
+            <Link href="/news">news</Link>
             <CartDropdown />
           </div>
         </nav>

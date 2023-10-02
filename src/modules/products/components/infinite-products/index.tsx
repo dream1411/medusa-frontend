@@ -9,6 +9,7 @@ import { useCart } from "medusa-react"
 import { useEffect, useMemo } from "react"
 import { useInView } from "react-intersection-observer"
 import { useInfiniteQuery } from "@tanstack/react-query"
+import Input from "@modules/common/components/input"
 
 type InfiniteProductsType = {
   params: StoreGetProductsParams
@@ -58,6 +59,9 @@ const InfiniteProducts = ({ params }: InfiniteProductsType) => {
 
   return (
     <div className="flex-1 content-container">
+       <div className="w-[250px] my-10">
+      <Input placeholder="ค้นหาสินค้า" id="sales-channel-name" />
+      </div>
       <ul className="grid grid-cols-2 small:grid-cols-3 medium:grid-cols-4 gap-x-4 gap-y-8 flex-1">
         {previews.map((p) => (
           <li key={p.id}>
